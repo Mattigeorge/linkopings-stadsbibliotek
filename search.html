@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--search.html-->
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/favicon.ico" />
+    <title>Linköpings bibliotek</title>
+</head>
+
+<body>
+    <header>
+        <h1>Välkommen till linköpings bibliotek</h1>
+        <hr color=&quot;lightgray&quot;&gt; <table>
+        <tr>
+
+            <td>
+                <a href="index.html">
+                    Start
+                </a>
+            </td>
+            <a href="search.html">
+                <strong>Sök bok</strong>
+            </a>
+            <td>
+                <a href="about.html">Om oss</a>
+
+            </td>
+            <td>
+                <a href="index.html#bokstips">
+                    <font color="red">Utvalda böcker</font>
+                </a>
+            </td>
+        </tr>
+        <hr color=&quot;lightgray&quot;&gt; </table>
+
+
+    </header>
+    <section>
+        <h2>Sök efter en bok</h2>
+        <form method="GET" action=""
+            onsubmit="window.location.href='db/'+document.getElementById('search').value+'.html'; return false;">
+            <label for="isbn">ISBN</label>
+            <input type="search" placeholder="sök..." id="search" name="isbn" required>
+            <input type="submit" value="hitta boken">
+        </form>
+    </section>
+
+
+
+</body>
+
+</html>
